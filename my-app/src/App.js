@@ -1,11 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
 import FunctionalGreetingWitProps from './components/FunctionalGreetingWithProps';
 
 function App() {
   return (
     <div className="App">
-      <FunctionalGreetingWitProps/>
+      <FunctionalGreetingWitProps greeting="nice to meet you!" name="Mike" age="32" />
     </div>
   );
 }
