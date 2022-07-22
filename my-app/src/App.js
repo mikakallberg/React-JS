@@ -1,6 +1,8 @@
 import './App.css';
-import ConditionalRenderingClass from './components/ConditionalRenderingClass';
-import ConditionalRenderingFunctional from './components/ConditionalRenderingFunctional';
+import MethodsAsPropsParents from './components/MethodsAsPropsParents';
+// import NestingComponents from './components/NestingComponents';
+// import ConditionalRenderingClass from './components/ConditionalRenderingClass';
+// import ConditionalRenderingFunctional from './components/ConditionalRenderingFunctional';
 // import EventBindings from './components/EventBinding';
 // import EventsClass from './components/EventsClass';
 // import EventsFunctional from './components/EventsFunctional';
@@ -10,8 +12,10 @@ import ConditionalRenderingFunctional from './components/ConditionalRenderingFun
 function App() {
   return (
     <div className="App">
-      <ConditionalRenderingClass/>
-      <ConditionalRenderingFunctional connected={true}/>
+      <MethodsAsPropsParents/>
+      {/* <NestingComponents/> */}
+      {/* <ConditionalRenderingClass/>
+      <ConditionalRenderingFunctional connected={true}/> */}
       {/* <EventBindings/> */}
       {/* <EventsFunctional/>
       <EventsClass/> */}
