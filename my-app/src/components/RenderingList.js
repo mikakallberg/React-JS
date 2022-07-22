@@ -29,13 +29,13 @@ function RenderingList() {
     return (
     <div>
         {bookList.map(book => {
-            return <h2>{book}</h2>
+            return <h2 key={book}>{book}</h2>
         })}
         <hr/>
         {
             books.map(book => {
                 return (
-                    <div>
+                    <div key={book.title}>
                         <h5>{book.title}</h5>
                         <p>{book.author}</p>
                         <p>{book.pages}</p>
@@ -46,7 +46,7 @@ function RenderingList() {
         <hr/>
         {
             books.map(book =>{
-                return <Books book={book}/>
+                return <Books key={book.title} book={book}/>
             })
         }
     </div>
