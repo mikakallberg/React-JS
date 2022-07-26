@@ -1,11 +1,11 @@
 import './App.css';
-import UsedStateWithArray from './components/UsedStateWithArray';
+import UseEffectCounter from './components/UseEffectCounter';
 
 
 function App() {
   return (
     <div className="App">
-      <UsedStateWithArray />
+        <UseEffectCounter /> 
     </div>
   );
 }
