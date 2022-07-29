@@ -5,7 +5,7 @@ function HTTPHooks() {
     const [posts, setPosts] = useState([]);
     const [error, setError] = useState(null);
     const [postMessage, setPostMessage] = useState(null);
-    const postAPI = () => {
+    const postToAPI = () => {
         axios.post(
             'https://jsonplaceholder.typicode.com/posts',
             {
@@ -38,7 +38,7 @@ function HTTPHooks() {
     }, [])
     return (
         <div>
-            <button onClick={postToApi}>
+            <button onClick={postToAPI}>
                 Create Post
             </button>
             <p>{postMessage}</p>
